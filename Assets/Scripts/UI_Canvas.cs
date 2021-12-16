@@ -15,7 +15,15 @@ public class UI_Canvas : MonoBehaviour
 
     private float m_Min;
 
+    private bool timeGoing;     //
+
     
+    private void Start()
+    {
+        m_TextTimer.text = "Timer 0:0";
+        timeGoing = false;
+    }
+                                //
     private void Update()
     {
 
@@ -23,6 +31,7 @@ public class UI_Canvas : MonoBehaviour
         UpdateTextHeightInfo();
 
     }
+    
 
     void UpdateTextHeightInfo()
     {
